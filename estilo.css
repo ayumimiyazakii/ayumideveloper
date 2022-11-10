@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+
+}
+:root{
+    --azulmenu: #00BFFF;
+    --letras1: #0000CD;
+    --letras2: #000000;
+    --cinzacorpo: #F2F2F2;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--azulmenu);
+    padding: 1rem;
+}
+.md-48{
+    font-size: 48px;
+    color: var(--letras2);
+}
+nav{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 27%;
+    height: 30vh;
+    position: absolute;
+    right: 0;
+    padding: 35% 24px 10% 0;    
+    text-align: right;
+    background-color: var(--azulmenu);
+    line-height: 2rem;
+}
+ul{
+    list-style-type: none;
+}
+.titulo{
+    font-size: 0.9rem;
+    color: var(--letras2);
+
+}
+img{
+    width: 96%;
+     border-radius: 15px;
+    margin: 2%;
+}
+.primeiroh1{
+    color:var(--letras1);
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+.primeiro_texto{
+    margin: 3%;
+    padding: 0%;
+    font-size: 1.1rem;
+}
+.pcorazul{
+    color: var(--letras1);
+    
+}
+.video iframe{
+    margin: 8%;
+   display: flex;
+   padding: 0%;
+}
+.carousel-inner{
+    width: 60%;
+    height: 0%;
+   padding: 6%;
+   display: flex;
+}
+.titulo_historia{
+    color: var(--letras1);
+    font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    margin: 6%;
+}
+.texto_historia{
+    margin: 3%;
+    padding: 1%;
+    font-size: 1.1rem;
+    display: flex;
+}
+.jogo{
+    color: var(--letras1);
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0%;
+}
+.logo{
+    background: var(--cinzacorpo);
+}
+.imgps4{
+    margin-left: 8%;
+     width: 10%; 
+}
+.imgsteam{
+    margin-left: 24%;
+    width: 10%; 
+}
+.imgxbox{
+    margin-left: 24%;
+     width: 10%; 
+}
+.rodape{
+    background-color: var(--azulmenu);
+    justify-content: center;
+    font-size: 1rem;
+    display: flex; 
+    margin: 0%;
+    padding: 0%;
+}
+
+@media screen and (min-width: 1024px)
+{
+
+    #botao_menu{
+        display: none;
+    }
+
+    nav{
+        display: block;
+        position: relative;
+        z-index: 0;
+        width: auto;
+        padding: 0;
+        text-align: right;
+        background-color: var(--laranja-claro);
+    }
+
+    li{
+        display: inline;
+        margin-left: 24px;
+    }
+
+    #botao_fechar{
+        display: none;
+    }
+    
+
+    .card_servico{
+        text-align: left;
+    }
+
+    .card_servico_conteudo{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
