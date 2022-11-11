@@ -102,6 +102,7 @@ img{
     color: var(--letras1);
     text-align: center;
     text-decoration: underline;
+    line-height: 4rem;
 }
 .titutlo_class h3{
     margin: 3%;
@@ -116,7 +117,7 @@ img{
    background: var(--hunter);
    margin: 10px;
 }
-.hunter p{
+.hunter .estilo_class{
     margin: 3%;
     padding: 1%;
     font-size: 1.1rem;
