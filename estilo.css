@@ -2,13 +2,19 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-
+    line-height: 1.8rem;
 }
 :root{
     --azulmenu: #00BFFF;
     --letras1: #0000CD;
     --letras2: #000000;
     --cinzacorpo: #F2F2F2;
+    --braver:  #00FF00	;
+    --bouncer: #7CFC00;
+    --waker: #ff8c00;
+    --hunter: #ff6961;
+    --fighter: #bf40bf;
+    --ranger: #9090ff;
 }
 header{
     display: flex;
@@ -65,15 +71,17 @@ img{
     
 }
 .video iframe{
+    width: 342px;
+    height: 200px;
     margin: 8%;
    display: flex;
-   padding: 0%;
+   padding: 1%;
 }
-.carousel-inner{
-    width: 60%;
-    height: 0%;
-   padding: 6%;
+.carousel-item{
+   margin: 0%;
    display: flex;
+   padding: 24px;
+   align-items: center;
 }
 .titulo_historia{
     color: var(--letras1);
@@ -87,6 +95,96 @@ img{
     padding: 1%;
     font-size: 1.1rem;
     display: flex;
+}
+.todas_classes{
+    padding: 1%;
+    font-size: 1.4rem;
+    color: var(--letras1);
+    text-align: center;
+    text-decoration: underline;
+}
+.titutlo_class h3{
+    margin: 3%;
+    padding: 1%;
+    color:var(--letras1);
+    font-size: 1.3rem;
+    text-align: center;
+}
+.hunter{
+    box-shadow: 0 4px 18px black;
+    border-radius: 20px;
+   background: var(--hunter);
+   margin: 10px;
+}
+.hunter p{
+    margin: 3%;
+    padding: 1%;
+    font-size: 1.1rem;
+    display: flex;
+    line-height: 1.6rem;
+}
+.fighter{
+    box-shadow: 0 4px 18px black;
+    border-radius: 20px;
+   background: var(--fighter);
+   margin: 10px;
+}
+.fighter p{
+    margin: 3%;
+    padding: 1%;
+    font-size: 1.1rem;
+    display: flex;
+} 
+.ranger{
+    box-shadow: 0 4px 18px black;
+    border-radius: 20px;
+   background: var(--ranger);
+   margin: 10px;
+}
+.ranger p{
+    margin: 3%;
+    padding: 1%;
+    font-size: 1.1rem;
+    display: flex;
+} 
+.braver{
+    box-shadow: 0 4px 18px black;
+    border-radius: 20px;
+   background: var(--braver);
+   margin: 10px;
+}
+.braver p{
+    margin: 3%;
+    padding: 1%;
+    font-size: 1.1rem;
+    display: flex;
+    line-height: 1.6rem;
+}
+.bouncer{
+    box-shadow: 0 4px 18px black;
+    border-radius: 20px;
+   background: var(--bouncer);
+   margin: 10px;
+}
+.bouncer p{
+    margin: 3%;
+    padding: 1%;
+    font-size: 1.1rem;
+    display: flex;
+    line-height: 1.6rem;
+}
+.waker{
+    box-shadow: 0 4px 18px black;
+    border-radius: 20px;
+   background: var(--waker);
+   margin: 10px;
+}
+.waker p{
+    margin: 3%;
+    padding: 1%;
+    font-size: 1.1rem;
+    display: flex;
+    line-height: 1.6rem;
 }
 .jogo{
     color: var(--letras1);
@@ -117,6 +215,9 @@ img{
     margin: 0%;
     padding: 0%;
 }
+
+
+
 
 @media screen and (min-width: 1024px)
 {
