@@ -8,13 +8,19 @@
     --azulmenu: #00BFFF;
     --letras1: #0000CD;
     --letras2: #000000;
-    --cinzacorpo: #F2F2F2;
+    --cinzacorpo: #bdbebd;
     --braver:  #00FF00	;
     --bouncer: #7CFC00;
     --waker: #ff8c00;
     --hunter: #ff6961;
     --fighter: #bf40bf;
     --ranger: #9090ff;
+    --gunner: #add8e6; 
+    --force: #ffff00;
+    --techter: #cccc00;
+}
+main{
+    background:var(--cinzacorpo)
 }
 header{
     display: flex;
@@ -31,11 +37,11 @@ nav{
     display: none;
     flex-direction: column;
     justify-content: center;
-    width: 27%;
-    height: 30vh;
+    width: 25%;
+    height: 75vh;
     position: absolute;
     right: 0;
-    padding: 35% 24px 10% 0;    
+    padding: 43% 24px 10% 0;    
     text-align: right;
     background-color: var(--azulmenu);
     line-height: 2rem;
@@ -71,30 +77,31 @@ img{
     
 }
 .video iframe{
-    width: 342px;
-    height: 200px;
-    margin: 8%;
+    width: 350px;
+    height: 210px;
    display: flex;
-   padding: 1%;
+   padding: 6px;
+   margin: 24px;
 }
 .carousel-item{
    margin: 0%;
    display: flex;
    padding: 24px;
-   align-items: center;
+   justify-content: center;
 }
 .titulo_historia{
     color: var(--letras1);
     font-size: 1.4rem;
     text-align: center;
     display: flex;
-    margin: 6%;
+    justify-content: center;
 }
-.texto_historia{
+.texto_historia p{
     margin: 3%;
     padding: 1%;
     font-size: 1.1rem;
     display: flex;
+    text-align: left;
 }
 .todas_classes{
     padding: 1%;
@@ -116,6 +123,7 @@ img{
     border-radius: 20px;
    background: var(--hunter);
    margin: 10px;
+   text-align: left;
 }
 .hunter .estilo_class{
     margin: 3%;
@@ -123,36 +131,84 @@ img{
     font-size: 1.1rem;
     display: flex;
     line-height: 1.6rem;
+    text-align: left;
 }
 .fighter{
     box-shadow: 0 4px 18px black;
     border-radius: 20px;
    background: var(--fighter);
    margin: 10px;
+   text-align: left;
 }
 .fighter p{
     margin: 3%;
     padding: 1%;
     font-size: 1.1rem;
     display: flex;
+    text-align: left;
 } 
 .ranger{
     box-shadow: 0 4px 18px black;
     border-radius: 20px;
    background: var(--ranger);
    margin: 10px;
+   text-align: left;
 }
 .ranger p{
     margin: 3%;
     padding: 1%;
     font-size: 1.1rem;
     display: flex;
+    text-align: left;
+} 
+.gunner{
+    box-shadow: 0 4px 18px black;
+    border-radius: 20px;
+   background: var(--gunner);
+   margin: 10px;
+   text-align: left;
+}
+.gunner p{
+    margin: 3%;
+    padding: 1%;
+    font-size: 1.1rem;
+    display: flex;
+    text-align: left;
+} 
+.force{
+    box-shadow: 0 4px 18px black;
+    border-radius: 20px;
+   background: var(--force);
+   margin: 10px;
+   text-align: left;
+}
+.force p{
+    margin: 3%;
+    padding: 1%;
+    font-size: 1.1rem;
+    display: flex;
+    text-align: left;
+} 
+.techter{
+    box-shadow: 0 4px 18px black;
+    border-radius: 20px;
+   background: var(--techter);
+   margin: 10px;
+   text-align: left;
+}
+.techter p{
+    margin: 3%;
+    padding: 1%;
+    font-size: 1.1rem;
+    display: flex;
+    text-align: left;
 } 
 .braver{
     box-shadow: 0 4px 18px black;
     border-radius: 20px;
    background: var(--braver);
    margin: 10px;
+   text-align: left;
 }
 .braver p{
     margin: 3%;
@@ -160,12 +216,14 @@ img{
     font-size: 1.1rem;
     display: flex;
     line-height: 1.6rem;
+    text-align: left;
 }
 .bouncer{
     box-shadow: 0 4px 18px black;
     border-radius: 20px;
    background: var(--bouncer);
    margin: 10px;
+   text-align: left;
 }
 .bouncer p{
     margin: 3%;
@@ -173,12 +231,14 @@ img{
     font-size: 1.1rem;
     display: flex;
     line-height: 1.6rem;
+    text-align: left;
 }
 .waker{
     box-shadow: 0 4px 18px black;
     border-radius: 20px;
    background: var(--waker);
    margin: 10px;
+   text-align: left;
 }
 .waker p{
     margin: 3%;
@@ -186,6 +246,10 @@ img{
     font-size: 1.1rem;
     display: flex;
     line-height: 1.6rem;
+    text-align: left;
+}
+.texto_historia .texto-logo{
+    color: var(--letras1);
 }
 .jogo{
     color: var(--letras1);
@@ -218,23 +282,23 @@ img{
 }
 
 
-
-
 @media screen and (min-width: 1024px)
 {
-
+    body{
+        overflow-x: hidden;
+    }
     #botao_menu{
         display: none;
     }
 
     nav{
-        display: block;
+        display: contents;
         position: relative;
         z-index: 0;
         width: auto;
         padding: 0;
         text-align: right;
-        background-color: var(--laranja-claro);
+        background-color: var(--azulmenu);
     }
 
     li{
@@ -245,17 +309,135 @@ img{
     #botao_fechar{
         display: none;
     }
+    .titulo{
+        font-size: 1.4rem;
+    }
+    #inicio img{
+        width: 98%;
+        border-radius: 24px;
+        justify-content: center;
+        margin: 0 13px;
     
+    }
+    .primeiroh1{
+        margin: 2% 0 0% 0%;
+    }
+    .pcorazul{
+      margin-right: 52%;
+      margin-left: 5%;
+      padding: 0;
+    }
+    .primeiro_texto p{
+        margin-right: 52%;
+        margin-left: 5%;
+        padding: 0;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .video iframe{
+        width: 520px;
+        height: 300px;
+        display: flex;
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+    .carrosel1 {
+        width: 50%;
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+     }
 
-    .card_servico{
+    .titulo_historia{   
+         width: 100%;
+        display: flex;
+         flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+    
+     }
+     .texto_historia{
+       margin: 0;
+        padding: 0;   
+     }
+     #button{
+        color: var(--letras2);
+     }
+     .carrosel2{
+        width: 50%;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+     }
+     .hunter{
+        padding: 0px;
+        margin: 0 22% 0 23%; 
         text-align: left;
+     }
+     .fighter{
+        margin: 0 22% 0 23%; 
+        padding: 0;
+        text-align: left;
+     }
+     .ranger{
+        margin: 0 22% 0 23%; 
+        padding: 0; 
+        text-align: left;
+     }
+     .gunner{
+        margin: 0 22% 0 23%; 
+        padding: 0;
+        text-align: left;
+     }
+     .force{
+        margin: 0 22% 0 23%; 
+        padding: 0;
+        text-align: left;
+     }
+     .techter{
+        margin: 0 22% 0 23%; 
+        padding: 0;
+        text-align: left;
+     }
+     .braver{
+        margin: 0 22% 0 23%; 
+        padding: 0;
+        text-align: left;
+     }
+     .bouncer{
+        margin: 0 22% 0 23%; 
+        padding: 0;
+        text-align: left;
+     }
+     .waker{
+        margin: 0 22% 0 23%; 
+        padding: 0;
+        text-align: left;
+     }
+    .tudo{
+        display: inline-block;    
     }
 
-    .card_servico_conteudo{
+    #baixar .texto_historia{
+        display: flex;
+         flex-direction: column;
+        align-items:center;
+        margin: 0px;
+        padding: 0%;
+    }
+    .texto_historia .texto-logo{
+        display: flex;
+        justify-content: center;
+        margin: 0% 0px 25px 0px;
+        padding: 0%;
+    }
+    .logo{
         width: 100%;
         display: flex;
-        justify-content: space-around;
         align-items: center;
+        margin-left: 7rem;
     }
 }
 
